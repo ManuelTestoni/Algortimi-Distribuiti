@@ -15,12 +15,6 @@ public class Server {
             InputStream is = s.getInputStream();
             System.out.println("Ricevuty 4 byte");
 
-            /*
-            for(int i=0; i<4; i++){
-                System.out.println("Ricevuto: " + is.read());
-            }
-            */
-            //Incapsulamento
             DataInputStream dis = new DataInputStream(is);
             String reverse = dis.readUTF();
             
